@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>管理中心</title>
+    <link rel="stylesheet" href="./css/font_1550287_9r3agu0c3k/iconfont.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body style="margin: 0;">
+    <!-- 导航栏 -->
+    <div class="nav-wrapper" id="nav-wrapper">
+        <div class="nav">
+            <div class="nav-left">
+                <img src="./img/01.png" alt="博客">
+                <h2>博客</h2>
+            </div>
+            <div class="nav-center">
+                <ul class="item_list">
+                    <li class="item" id="shouye"><i class="iconfont">&#xe626;</i>首页</li>
+                    <li class="item" id="management_center"><i class="iconfont">&#xe708;</i>管理中心</li>
+                    <li class="item" id="super_management_center" style="display: none;"><i
+                            class="iconfont">&#xe708;</i>超级管理中心</li>
+                    <li class="item" id="new_blog"><i class="iconfont">&#xe667;</i>写博客</li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="status_1">
+                    <div>
+                        <a id="login">登录</a>
+                    </div>
+                    <div>
+                        <a id="register">注册</a>
+                    </div>
+                </div>
+                <div class="status_2">
+                    <div>
+                        欢迎回来,<span class="author_name" id="author_name"></span>
+                    </div>
+                    <div class="user_img">
+                        <img src="" alt="头像" id="user_img">
+                    </div>
+                    <div>
+                        <i class="iconfont">&#xe64d;</i> <a id="logout">退出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="admin-wrapper">
+        <div class="admin-top">
+            <h1>管理中心</h1>
+            <div id="admin-new-blog">
+                <a href="/new.html">新建博客</a>
+            </div>
+            <div class="search">
+                <input id="text-keyword">
+                <div><a id="btn-search">搜索</a></div>
+            </div>
+        </div>
+        <div class="admin-main">
+            <table id="table-container">
+                <tr>
+                    <th>博客标题</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                    <th>操作</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+    <script src="https://cdn.bootcss.com/moment.js/2.23.0/locale/zh-cn.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>

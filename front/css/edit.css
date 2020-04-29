@@ -1,0 +1,21 @@
+body {
+    margin: 0 20px;
+    line-height: 1;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.title-wrapper {
+    margin-bottom: 10px;
+}
+
+.title-wrapper input {
+    width: 300px;
+}
+
+.content-wrapper textarea {
+    width: 300px;
+    height: 150px;
+}

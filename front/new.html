@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%; width: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客-写文章</title>
+    <!-- 引入样式文件 -->
+    <link href="./quill/quill/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font_1550287_9r3agu0c3k/iconfont.css">
+    <link rel="stylesheet" href="./css/new.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left-nav">
+            <div class="home">
+                <a href="/index.html">返回首页</a>
+            </div>
+            <div class="nav-manager" id="nav-manager">
+                <a href="/admin.html">
+                    管理中心
+                </a>
+                <i class="iconfont">&#xe708;</i>
+            </div>
+            <div class="nav-write" id="nav-write">
+                <a href="/new.html">
+                    写博客
+                </a>
+                <i class="iconfont">&#xe667;</i>
+            </div>
+        </div>
+        <div class="right-main">
+            <div class="article-records-wrapper">
+                <div class="article-records">
+                    <div id="new_blog">
+                        <i class="iconfont">&#xe649;</i>
+                        <span>新建文章</span>
+                    </div>
+                    <ul id="blog-list">
+                        <!-- <li>
+                                <i class="iconfont document">&#xe610;</i>
+                                <span>文章一</span>
+                                <i class="iconfont">&#xe771;</i>
+                            </li>
+                            <li>
+                                <i class="iconfont document" >&#xe610;</i>
+                                <span>文章二</span>
+                                <i class="iconfont">&#xe771;</i>
+                            </li>
+                            <li>
+                                <i class="iconfont document">&#xe610;</i>
+                                <span>文章三</span>
+                                <i class="iconfont">&#xe771;</i>
+                            </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="editor-wrapper">
+                ​<div class="new_submit">
+                    <button id="new_submit">发表</button>
+                </div>
+                <div id="editor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <input id="uploadImg" type="file" style="display:none" accept="image/png, image/jpeg, image/gif" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <!-- 引入Quill库文件 -->
+    <script src="./quill/quill/quill.js"></script>
+    <script src="./js/new.js"></script>
+</body>
+
+</html>
